@@ -58,18 +58,7 @@ const products = [
         description: "Add volume and definition to your lashes with a rich black formula.",
         image: "https://www.cf.com.lb/cdn/shop/files/3600531143619.jpg?v=1747213257&width=2048"
     },
-    {
-        id: 5,
-        name: "Length & Lift Mascara",
-        brand: "GLOWÉ BEAUTY",
-        category: "Mascara",
-        price: 20,
-        oldPrice: 0,
-        tag: "",
-        shade: "Black",
-        description: "A lengthening mascara that helps create lifted, defined-looking lashes.",
-        image: "https://img.pikbest.com/png-images/20250210/sleek-black-mascara-tube-and-wand-white-background_11511494.png%21bw700"
-    },
+  
 
     // EYESHADOW
     {
