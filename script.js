@@ -17,7 +17,7 @@ const products = [
         shade: "Warm Sand",
         description: "A comfortable matte foundation with an even finish for everyday wear.",
        image: "https://assets.icanet.se/image/upload/v1734523823/1036091_1.webp"
-    }
+    },
 
     // CONCEALER
     {
