@@ -32,18 +32,7 @@ const products = [
         description: "A full-coverage concealer with a natural matte finish that smooths and brightens the under-eye area.",
         image: "https://media.ulta.com/i/ulta/2304918?fmt=auto&h=1400&w=1400"
     },
-    {
-        id: 3,
-        name: "Full Cover Concealer",
-        brand: "GLOWÉ BEAUTY",
-        category: "Concealer",
-        price: 19,
-        oldPrice: 0,
-        tag: "NEW",
-        shade: "Medium Beige",
-        description: "A smooth, buildable concealer that blends easily and gives comfortable coverage.",
-        image: "https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?auto=format&fit=crop&w=800&q=85"
-    },
+   
 
     // MASCARA
     {
@@ -58,7 +47,19 @@ const products = [
         description: "Add volume and definition to your lashes with a rich black formula.",
         image: "https://www.cf.com.lb/cdn/shop/files/3600531143619.jpg?v=1747213257&width=2048"
     },
-  
+  {
+        id: 5,
+        name: "Length & Lift Mascara",
+        brand: "GLOWÉ BEAUTY",
+        category: "Mascara",
+        price: 20,
+        oldPrice: 0,
+        tag: "",
+        shade: "Black",
+        description: "A lengthening mascara that helps create lifted, defined-looking lashes.",
+        image: "https://img.pikbest.com/png-images/20250210/sleek-black-mascara-tube-and-wand-white-background_11511494.png%21bw700"
+    },
+
 
     // EYESHADOW
     {
