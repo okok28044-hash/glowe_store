@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover your favorite beauty, skincare, makeup and fragrance products.">
+    <title>GLOWÉ | Beauty & Beyond</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement">
+        <div class="announcement-track">
+            <span>SALE! UP TO 50% OFF</span>
+            <span>✦ AUTHENTIC BEAUTY PRODUCTS ✦</span>
+            <span>FAST DELIVERY ACROSS LEBANON</span>
+            <span>SALE! UP TO 50% OFF</span>
+            <span>✦ AUTHENTIC BEAUTY PRODUCTS ✦</span>
+            <span>FAST DELIVERY ACROSS LEBANON</span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <button class="mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+
+        <nav class="header-left">
+            <a href="#about">ABOUT US</a>
+            <a href="#brands">BRANDS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">G.</span>
+            <span>GLOWÉ</span>
+            <small>BEAUTY & BEYOND</small>
+        </a>
+
+        <div class="header-actions">
+            <button id="searchToggle" aria-label="Search">⌕</button>
+            <button aria-label="Account">♙</button>
+            <button aria-label="Wishlist">♡ <sup id="wishlistCount">0</sup></button>
+            <button aria-label="Shopping bag">♧ <sup id="cartCount">0</sup></button>
+        </div>
+    </header>
+
+    <div class="search-area" id="searchArea">
+        <input type="search" id="searchInput" placeholder="Search your favorite products...">
+        <button id="closeSearch">✕</button>
+    </div>
+
+    <nav class="category-nav" id="categoryNav">
+    <a href="#section-foundation">MAKEUP</a>
+    <a href="#brands">BRANDS</a>
+    <a href="#categories">HAIR CARE</a>
+    <a href="#brands">SEPHORA</a>
+    <a href="#section-skincare">SKIN CARE</a>
+    <a href="#categories">BODY CARE</a>
+</nav>
+    <main>
+
+        <!-- HERO SLIDER -->
+        <section class="hero">
+
+            <div class="hero-slide active">
+                <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=2000&q=85" alt="Luxury beauty products">
+                <div class="hero-content">
+                    <span class="eyebrow">YOUR BEAUTY DESTINATION</span>
+                    <h1>Beauty begins<br>with <i>you.</i></h1>
+                    <p>Discover the beauty products you love, all in one place.</p>
+                    <a href="#categories" class="hero-btn">SHOP COLLECTION <span>↗</span></a>
+                </div>
+                <span class="slide-number">01 / 03</span>
+            </div>
+
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=2000&q=85" alt="Skincare collection">
+                <div class="hero-content">
+                    <span class="eyebrow">A LITTLE SELF-CARE</span>
+                    <h1>Glow from<br><i>within.</i></h1>
+                    <p>Your skincare routine deserves something special.</p>
+                    <a href="#section-skincare" class="hero-btn">DISCOVER SKINCARE <span>↗</span></a>
+                </div>
+                <span class="slide-number">02 / 03</span>
+            </div>
+
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=2000&q=85" alt="Luxury fragrances">
+                <div class="hero-content">
+                    <span class="eyebrow">THE ART OF FRAGRANCE</span>
+                    <h1>Make it<br><i>unforgettable.</i></h1>
+                    <p>Find the fragrance that feels like you.</p>
+                    <a href="#section-perfume" class="hero-btn">EXPLORE PERFUMES <span>↗</span></a>
+                </div>
+                <span class="slide-number">03 / 03</span>
+            </div>
+
+            <button class="slider-arrow prev" id="prevSlide">←</button>
+            <button class="slider-arrow next" id="nextSlide">→</button>
+
+            <div class="slider-dots" id="sliderDots">
+                <button class="dot active" aria-label="Slide 1"></button>
+                <button class="dot" aria-label="Slide 2"></button>
+                <button class="dot" aria-label="Slide 3"></button>
+            </div>
+
+        </section>
+
+        <!-- SPECIAL OFFERS -->
+        <section class="special-offers section-padding" id="specialOffers">
+            <div class="section-heading">
+                <span>DON'T MISS OUT</span>
+                <h2>Special <i>offers.</i></h2>
+                <p>Your favorite beauty essentials, now in special sets.</p>
+            </div>
+            <div class="product-grid" id="saleSets"></div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section class="categories section-padding" id="categories">
+            <div class="section-heading">
+                <span>EXPLORE OUR WORLD</span>
+                <h2>Shop by <i>category.</i></h2>
+                <p>Find exactly what your beauty routine needs.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#section-foundation" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=85" alt="Foundation">
+                    <div><h3>Foundation</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-concealer" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1631214540242-9c9b7e7b7b5a?auto=format&fit=crop&w=700&q=85" alt="Concealer">
+                    <div><h3>Concealer</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-mascara" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=85" alt="Mascara">
+                    <div><h3>Mascara</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-eyeshadow" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=85" alt="Eyeshadow">
+                    <div><h3>Eyeshadow</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-blush" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85" alt="Blush">
+                    <div><h3>Blush</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-lipstick" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=85" alt="Lipstick">
+                    <div><h3>Lipstick</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-highlighter" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1599733589046-833c6e9c9f2d?auto=format&fit=crop&w=700&q=85" alt="Highlighter">
+                    <div><h3>Highlighter</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-skincare" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=85" alt="Skin Care">
+                    <div><h3>Skin Care</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-perfume" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85" alt="Perfume">
+                    <div><h3>Perfume</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+                <a href="#section-beauty-sets" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=700&q=85" alt="Beauty Sets">
+                    <div><h3>Beauty Sets</h3><span>EXPLORE ↗</span></div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- PRODUCTS GENERATED BY JAVASCRIPT -->
+        <div id="allCategorySections"></div>
+
+        <!-- ABOUT BANNER -->
+        <section class="promo-banner" id="about">
+            <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1800&q=85" alt="Beauty collection">
+            <div class="promo-content">
+                <span>YOUR BEAUTY, YOUR RULES</span>
+                <h2>Because you<br>deserve to <i>glow.</i></h2>
+                <a href="#categories" class="hero-btn">SHOP NOW ↗</a>
+            </div>
+        </section>
+
+        <!-- BRANDS -->
+        <section class="brands section-padding" id="brands">
+            <div class="section-heading">
+                <span>BEAUTY YOU CAN TRUST</span>
+                <h2>Discover our <i>brands.</i></h2>
+            </div>
+
+            <div class="brand-list">
+                <span>CLINIQUE</span>
+                <span>ANUA</span>
+                <span>OLAPLEX</span>
+                <span>LANCÔME</span>
+                <span>RARE BEAUTY</span>
+                <span>THE ORDINARY</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">GLOWÉ.</a>
+                <p>Beauty is personal. Discover products that make you feel like yourself.</p>
+            </div>
+
+            <div>
+                <h4>EXPLORE</h4>
+                <a href="#specialOffers">Special Offers</a>
+                <a href="#categories">Shop by Category</a>
+                <a href="#section-foundation">Foundation</a>
+                <a href="#section-concealer">Concealer</a>
+                <a href="#section-mascara">Mascara</a>
+                <a href="#section-beauty-sets">Beauty Sets</a>
+            </div>
+
+            <div>
+                <h4>INFORMATION</h4>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">Delivery Information</a>
+            </div>
+
+            <div>
+                <h4>FOLLOW US</h4>
+                <a href="#contact">Instagram</a>
+                <a href="#contact">WhatsApp</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 GLOWÉ. All rights reserved.</p>
+            <p>MADE FOR YOUR BEAUTY.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
